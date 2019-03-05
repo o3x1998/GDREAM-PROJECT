@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <title>간단한 지도 표시하기</title>
+
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4s2pd0cqcc&submodules=geocoder"></script>
+
+</head>
+
+<body>
+
+<div id="map" style="width:100%;height:500px;"></div>
+
+    
+
+
+
+<script>
+
+   
+
+    
+
+    
+
+var map = new naver.maps.Map(document.getElementById('map'), {zoom: 11, mapTypeControl: true});
+
+
+
+map.fitBounds(naver.maps.LatLngBounds.bounds(new naver.maps.LatLng(37.30248, 126.97258),
+
+                                             new naver.maps.LatLng(37.26033, 127.05895 )));
+ 
+
+
+var mk1 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27305, 127.02783),
+
+    
+
+    map: map
+
+});//갑연만두
+
+
+var mk2 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.26595, 127.01933),
+
+    
+
+    map: map
+
+});//강부자식당
+
+
+
+var mk3 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28711, 127.03336),
+
+    
+
+    map: map
+
+});//궁차이나
+
+var mk4 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27698, 127.02361),
+
+    
+
+    map: map
+
+});//금문
+
+var mk5 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28429, 126.99323),
+
+    
+
+    map: map
+
+});//김가네
+
+var mk6 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28488, 126.99106),
+
+    
+
+    map: map
+
+});//김밥나라
+
+var mk7 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27868, 126.99975),
+
+    
+
+    map: map
+
+});//김밥속으로
+
+var mk8 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28501, 126.99203),
+
+    
+
+    map: map
+
+});//김밥천국
+
+var mk9 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27158, 127.00502),
+
+    
+
+    map: map
+
+});//남이식당
+
+var mk10 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27698, 127.02361),
+
+    
+
+    map: map
+
+});//또와요분식
+
+
+var mk11 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.26983, 127.00919),
+
+    
+
+    map: map
+
+});//뚜레쥬르 교동점
+
+
+var mk12 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28084, 127.02593),
+
+    
+
+    map: map
+
+});//라이라이
+
+
+var mk13 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28501, 126.99203),
+
+    
+
+    map: map
+
+});//맘스터치(화서역점)
+
+
+var mk14 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28087, 127.00280),
+
+    
+
+    map: map
+
+});//미소야
+
+
+var mk15 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.26911, 127.03440),
+
+    
+
+    map: map
+
+});//미소야 인계래미안점
+
+var mk16 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27917, 127.04299),
+
+    
+
+    map: map
+
+});//밥리버거
+
+var mk17 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28189, 127.02024),
+
+    
+
+    map: map
+
+});//본가갈비
+
+
+var mk18 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.26911, 127.03440),
+
+    
+
+    map: map
+
+});//본죽
+
+
+var mk19 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27707, 127.04371),
+
+    
+
+    map: map
+
+});//봉구스 밥버거
+
+var mk20 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27158, 127.00502),
+
+    
+
+    map: map
+
+});//삼대식당
+
+
+var mk21 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28711, 127.03336),
+
+    
+
+    map: map
+
+});//삼백집수원점
+
+
+var mk22 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27760, 127.00323),
+
+    
+
+    map: map
+
+});//서그네 멸치우동
+
+
+var mk23 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27334, 127.00313),
+
+    
+
+    map: map
+
+});//소문
+
+
+var mk24 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27707, 127.04371),
+
+    
+
+    map: map
+
+});//소풍김밥
+
+
+var mk25 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27460, 127.00359),
+
+    
+
+    map: map
+
+});//수여고 분식
+
+
+
+var mk26 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27594, 127.00324),
+
+    
+
+    map: map
+
+});//신전떡볶이수원여고점
+
+
+var mk27 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.26911, 127.03440),
+
+    
+
+    map: map
+
+});//아자아자 맛집
+
+
+var mk28 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28374, 127.0117),
+
+    
+
+    map: map
+
+});//아자아자 분식
+
+var mk29 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27907, 127.04274),
+
+    
+
+    map: map
+
+});//알촌
+
+
+var mk30 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28479, 127.03463),
+
+    
+
+    map: map
+
+});//얄리식당
+
+
+var mk31 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27868, 126.99975),
+
+    
+
+    map: map
+
+});//양박사
+
+
+var mk33 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28541, 127.03364),
+
+    
+
+    map: map
+
+});//영빈관
+
+var mk34 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27031, 127.01551),
+
+    
+
+    map: map
+
+});//예빈
+
+var mk35 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28092, 126.99692),
+
+    
+
+    map: map
+
+});//와샌드위치
+
+var mk36 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.26703, 127.00267),
+
+    
+
+    map: map
+
+});//왕서방손짜장
+
+var mk37 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28662, 127.00506),
+
+    
+
+    map: map
+
+});//요리왕
+
+var mk38 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27188, 127.03497),
+
+    
+
+    map: map
+
+});//이교수해물명가
+
+var mk39 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27868, 126.99975),
+
+    
+
+    map: map
+
+});//이삭토스트
+
+
+var mk40 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27055, 127.00844),
+
+    
+
+    map: map
+
+});//자금성
+
+var mk41 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.26788, 127.00994),
+
+    
+
+    map: map
+
+});//정승골
+
+var mk42 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27868, 126.99975),
+
+    
+
+    map: map
+
+});//중국관
+
+
+
+var mk43 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27698, 127.02361),
+
+    
+
+    map: map
+
+});//중화요리 금문
+
+var mk44 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28442, 127.03426),
+
+    
+
+    map: map
+
+});//짬뽕의전설
+
+var mk45 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27052, 127.00929),
+
+    
+
+    map: map
+
+});//차이니즈 면사무소
+
+var mk46 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27655, 127.01688),
+
+    
+
+    map: map
+
+});//태극성
+
+var mk47 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27698, 127.02361),
+
+    
+
+    map: map
+
+});//태봉김밥
+
+var mk48 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28629, 127.03253),
+
+    
+
+    map: map
+
+});//토스트1번가
+
+var mk49 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28709, 127.01616),
+
+    
+
+    map: map
+
+});//이삭토스트 수원북문점
+
+var mk50 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27655, 127.01688),
+
+    
+
+    map: map
+
+});//파리바게뜨수원남문점
+
+var mk51 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27698, 127.02361),
+
+    
+
+    map: map
+
+});//파리바게뜨수원파밀리에점
+
+var mk52 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28488, 126.99106),
+
+    
+
+    map: map
+
+});//파리바게뜨화서역점
+
+
+var mk53 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.26983, 127.00919),
+
+    
+
+    map: map
+
+});//파리바게뜨 수원교동점
+
+var mk54 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28461, 127.03267),
+
+    
+
+    map: map
+
+});//파리바게뜨 월드컵점
+
+var mk55 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28770, 126.98637),
+
+    
+
+    map: map
+
+});//파리바게트 천천푸르지오
+
+var mk56 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27863, 127.04107),
+
+    
+
+    map: map
+
+});//파리바게트우만주공점
+
+var mk57 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27691, 127.02736),
+
+    
+
+    map: map
+
+});//파리바게뜨우만점
+
+var mk58 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.26911, 127.03440),
+
+    
+
+    map: map
+
+});//푸드맘
+
+var mk59 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.25992, 127.01845),
+
+    
+
+    map: map
+
+});//학교가자김밥 아주대점
+
+var mk60 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.26911, 127.03440),
+
+    
+
+    map: map
+
+});//한솥도시락
+
+var mk61 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.26427, 127.03459),
+
+    
+
+    map: map
+
+});//한스델리인계점
+
+var mk62 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27032, 127.00664),
+
+    
+
+    map: map
+
+});//형제반점
+
+var mk63 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28002, 127.00174),
+
+    
+
+    map: map
+
+});//홍가네집만두
+
+var mk64 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.27949, 127.01745),
+
+    
+
+    map: map
+
+});//화신반점
+
+var mk65 = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.28606, 127.03141),
+
+    
+
+    map: map
+
+});//화통숯불구이
+
+
+
+
+ 
+
+    var infoWindow = new naver.maps.InfoWindow({
+
+    anchorSkew: true
+
+});
+
+    
+
+map.setCursor('pointer');
+
+// search by tm128 coordinate
+
+function searchCoordinateToAddress(latlng) {
+
+    var tm128 = naver.maps.TransCoord.fromLatLngToTM128(latlng);
+
+    infoWindow.close();
+
+    naver.maps.Service.reverseGeocode({
+
+        location: tm128,
+
+        coordType: naver.maps.Service.CoordType.TM128
+
+    }, function(status, response) {
+
+        if (status === naver.maps.Service.Status.ERROR) {
+
+            return alert('Something Wrong!');
+
+        }
+
+        var items = response.result.items,
+
+            htmlAddresses = [];
+
+        for (var i=0, ii=items.length, item, addrType; i<ii; i++) {
+
+            item = items[i];
+
+            addrType = item.isRoadAddress ? '[도로명 주소]' : '[지번 주소]';
+
+            htmlAddresses.push((i+1) +'. '+ addrType +' '+ item.address);
+
+        }
+
+        infoWindow.setContent([
+
+                '<div style="padding:10px;min-width:200px;line-height:150%;">',
+
+                '<h4 style="margin-top:5px;">검색 좌표</h4><br />',
+
+                htmlAddresses.join('<br />'),
+
+                '</div>'
+
+            ].join('\n'));
+
+    
+
+    
+
+        
+
+        infoWindow.open(map, latlng);
+
+        
+
+    });
+
+}
+
+// result by latlng coordinate
+
+function searchAddressToCoordinate(address) {
+
+    naver.maps.Service.geocode({
+
+        address: address
+
+    }, function(status, response) {
+
+        if (status === naver.maps.Service.Status.ERROR) {
+
+            return alert('Something Wrong!');
+
+        }
+
+        var item = response.result.items[0],
+
+            addrType = item.isRoadAddress ? '[도로명 주소]' : '[지번 주소]',
+
+            point = new naver.maps.Point(item.point.x, item.point.y);
+
+        infoWindow.setContent([
+
+                '<div style="padding:10px;min-width:200px;line-height:150%;">',
+
+                '<h4 style="margin-top:5px;">검색 주소 : '+ response.result.userquery +'</h4><br />',
+
+                addrType +' '+ item.address +'<br />',
+
+                '</div>'
+
+            ].join('\n'));
+
+        
+
+        map.setCenter(point);
+
+        infoWindow.open(map, point);
+
+    });
+
+}
+
+function initGeocoder() {
+
+    map.addListener('click', function(e) {
+
+
+
+    	if(infowindow.getMap())
+
+    	{
+
+    		infowindow.close();
+
+    	}else {
+
+        searchCoordinateToAddress(e.coord);
+
+            $('#address').on('keydown', function(e) {
+
+        var keyCode = e.which;
+
+        if (keyCode === 13) { // Enter Key
+
+            searchAddressToCoordinate($('#address').val());
+
+        }
+
+    });
+
+    $('#submit').on('click', function(e) {
+
+        e.preventDefault();
+
+        searchAddressToCoordinate($('#address').val());
+
+    });
+
+    searchAddressToCoordinate('정자동 178-1');
+
+        }
+
+    });
+
+    
+
+}
+
+    
+
+naver.maps.onJSContentLoaded = initGeocoder;
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
